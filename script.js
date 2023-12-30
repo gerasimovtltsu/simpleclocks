@@ -7,5 +7,6 @@ function updateTime() {
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     document.getElementById('time').innerHTML = hours + ':' + minutes + ':' + seconds;
+    console.log('updated')
 }
 setInterval(updateTime, 1000);
