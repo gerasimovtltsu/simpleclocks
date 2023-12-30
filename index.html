@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Текущее Время</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/blaze/dist/components.buttons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/blaze/dist/components.cards.min.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Время Сейчас</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#" role="button">Контакты</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Текущее Время</h2>
+                    <h3>Просмотрите точное время</h3>
+                </hgroup>
+                <p>Время обновляется в реальном времени.</p>
+                <div id="clock" class="c-card">
+                    <div class="c-card__item">
+                        <h3 id="time">--:--:--</h3>
+                    </div>
+                    <div class="c-card__item u-text-center">
+                        <button class="c-button c-button--info" onclick="updateTime()">Обновить Время</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <small><a href="#">Политика конфиденциальности</a> • <a href="#">Условия использования</a></small>
+    </footer>
+</body>
+</html>
